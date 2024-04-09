@@ -4,6 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Para selecionar Tags apenas escrever tag| para selecioanar classes .nomedaclasse*/
+.container-grid{
+    /* Pode ser 80vw*/
+    width: 80%;
+    max-width: 1400px;
+
+    /* margin: 20px - Espaçamento externo de 20px */
+    /* margin: 20px 10px - Espaçamento 20px na vertical, 10px na horizontal */
+    /* margin: 20px 10px 5px - Espaçamento 20px na vertical, 10px na horizontal, 5px para baixo */
+    /* margin: 20px 10px 5px 2px - Espaçamento 20px na vertical, 10px na horizontal, 5px para baixo, 2px para esquerda*/
+
+    margin: 0 auto;
+}
 
 /* Seleciona a classe que recebera a customização | atalho bgc */
 .banner {
@@ -17,26 +30,39 @@
     background-position: 165% 40%;
 }
 
-.header {
+header {
     height: 165px;
 }
 
-.header img {
+header img {
     width: 234px;
 }
 
+header .container-grid{
+    height: 100%;
+
+    /* Priimeiro tem que tornar flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Para ser mais especifico pode ser nav.menu */
 .menu {
+    display: flex;
+    justify-content: space-between;
     width: 700px;
 }
 
 /* Dentro da tag Menu estou selecionando todos os as*/
 .menu a {
+    font-family:'Anta';
     font-size: 18px;
-
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
     color: white;
+/* Transition - normalmente serve para criar animações de transição*/
+    transition: text-decoration 500ms ease;
 }
 .menu a:hover{
-    color: chocolate;
-    transform:scale(1.5);
+    text-decoration-color: white;
 }
