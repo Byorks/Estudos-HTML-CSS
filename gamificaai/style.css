@@ -1,0 +1,42 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seleciona a classe que recebera a customização | atalho bgc */
+.banner {
+    /* vh = viewport e a porcentagem da ALTURA da tela */
+    /* vw = viewport e a porcentagem da LARGURA da tela */
+    height: 100vh;
+    /* atalho - ctrl + espaço para selecionar a imagem com mais facilidade*/
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
+    background-repeat: no-repeat;
+    /* atalho - bgp */
+    background-position: 165% 40%;
+}
+
+.header {
+    height: 165px;
+}
+
+.header img {
+    width: 234px;
+}
+
+/* Para ser mais especifico pode ser nav.menu */
+.menu {
+    width: 700px;
+}
+
+/* Dentro da tag Menu estou selecionando todos os as*/
+.menu a {
+    font-size: 18px;
+
+    color: white;
+}
+.menu a:hover{
+    color: chocolate;
+    transform:scale(1.5);
+}
