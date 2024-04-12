@@ -21,6 +21,7 @@
 .container-grid{
     /* Pode ser 80vw*/
     width: 80%;
+    /* Tamanho tirado das extremidades da grid. */
     max-width: 1400px;
 
     /* margin: 20px - Espaçamento externo de 20px */
