@@ -19,13 +19,7 @@
     height: 100vh;
     background-image: url(img/Banner/img-banner.png);
     /* Com o uso da propriedade Background conseguimos configurar imagens,cores e gradientes de forma unificada. */
-<<<<<<< HEAD
     background-repeat: no-repeat;
-=======
-    background: right / 50% 100% no-repeat url(img/Banner/obj-retangle.png), center /cover url(img/Banner/img-banner.png);
-    /*background-repeat: no-repeat;
-    background-position: 35% 0;*/
->>>>>>> 85f0a5d75c4ff1e274354d362f1601bddce07265
     /* Redimensiona a imagem, mantendo o proporção da tela(aspect ratio)*/
     background-size: cover;
 
@@ -61,13 +55,4 @@ header .container-grid {
     align-items: center;
 }
 
-<<<<<<< HEAD
 
-=======
-header #darkmode {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-}
->>>>>>> 85f0a5d75c4ff1e274354d362f1601bddce07265
