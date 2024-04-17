@@ -210,6 +210,8 @@ h2{
     /* Com essa propriedade, definimos ele como a referencia para todos os filhos dele*/
     position: relative;
 
+    margin-bottom: 120px;
+
 }
 
 #portfolio .container-grid{
@@ -235,6 +237,9 @@ h2{
 }
 
 #portfolio a {
+    /* Ajusta a box do texto para ficar ao redor apenas do que foi escrito, isso acontece com tags a*/
+    width: fit-content;
+
     color: white;
     
     font-family: 'Anta';
@@ -243,4 +248,65 @@ h2{
     /* Para organizarmos as camadas, usamos o z-index, ele vai descer as camadas*/
     z-index: 1;
 
+    transition: 200ms;
+
+}
+
+#portfolio a:hover{
+    /* O mesmo que 5% de scala*/
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form {
+    width: 50%;
+    
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 80px;
+    background-color: var(--roxo-gamifica);
+
+    color: white;
+    font-family: "Montserrat";
+    font-size: 17px;
+
+}
+
+.campo {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: left;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao{
+    width: 60%;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
 }
