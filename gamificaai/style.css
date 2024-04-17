@@ -310,3 +310,39 @@ h2{
 
     margin-bottom: 30px;
 }
+
+.campo input{
+    height: 40px;
+
+    color: white;
+    background-color: #351868;
+
+    border: none;
+    border-radius: 4px;
+
+    /* Espaçamento entre a caixa e o texto, serve apenas para a primeira linha*/
+    text-indent: 10px;
+
+    /* Tira a linha branca ao selecionar o campo */
+    outline:none;
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #351868;
+
+    border: none;
+    border-radius: 4px;
+
+    /* Espaçamento para varias linhas*/
+    padding: 10px;
+
+    /* Tira a possíbildade de redimensionamento da caixa do formulário*/
+    resize: none;
+    outline: none;
+}
+
+/*A virgula diz que vai servir para dois seletores diferentes */
+.campo label, .campo-descricao label{
+    margin-bottom: 15px;
+}
