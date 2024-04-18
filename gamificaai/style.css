@@ -346,3 +346,50 @@ h2{
 .campo label, .campo-descricao label{
     margin-bottom: 15px;
 }
+
+/* Altera a font do texto dentro do campo */
+.campo input, .campo-descricao textarea{
+    font-family: "Montserrat";
+    font-size: 17px;
+}
+
+/* Altera a cor da font dentro do campo, com id do campo */
+.campo input::placeholder, .campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+/* Pseudoclasse - Focus, igual o Hover*/
+.campo input:focus{
+    outline: 2px solid var(--laranja-famifica);
+
+}
+
+.campo-descricao :focus{
+    outline: 2px solid var(--laranja-famifica);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color:var(--laranja-famifica);   
+    color: white;
+    border-radius: 4px;
+    border: none;
+
+    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: 700; /* Bold */
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #ad4929;
+
+    transition: 200ms;
+}

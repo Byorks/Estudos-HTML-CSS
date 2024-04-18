@@ -81,17 +81,18 @@
     <h2>Contate-nos</h2>
     <form>
         <div class="campo">
-            <label for="">Qual é o seu nome?</label>
-            <input type="nome">
+            <!-- For direciona para qual campo esta sendo utilizado, assim conseguimos clicar no nome do campo e selecionar o campo -->
+            <label for="campo-nome">Qual é o seu nome?</label>
+            <input id="campo-nome"placeholder="Digite o seu nome..." type="nome">
         </div>
         
         <div class="campo">
-            <label for="">Em qual e-mail podemos te responder?</label>
-            <input type="email">
+            <label for="campo-email">Em qual e-mail podemos te responder?</label>
+            <input id="campo-email"placeholder="Digite o seu email..."type="email">
         </div>
         <div class="campo-descricao">
-            <label for="">Descreva um pouco da sua empresa, e também o problema que está procurando solucionar.</label>
-            <textarea id="" cols="30" rows="10"></textarea>
+            <label for="campo-texto">Descreva um pouco da sua empresa, e também o problema que está procurando solucionar.</label>
+            <textarea placeholder="Descreva sua empresa e o problema que enfrenta..."id="campo-texto" cols="30" rows="10"></textarea>
         </div>
         <!-- Para envio de formulários é necessário o botão ser do tipo submit -->
         <!-- Acessibilidade: em caso de escrever tudo em maiusculo o leitor de tela irá soletrar. -->
