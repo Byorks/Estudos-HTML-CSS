@@ -353,20 +353,17 @@ h2{
     font-size: 17px;
 }
 
-/* Altera a cor da font dentro do campo, com id do campo */
+/* Altera a cor da font dentro do campo, com id do campo | :: é o ID do For */
 .campo input::placeholder, .campo-descricao textarea::placeholder {
     color: #a0a0a0;
 }
 
 /* Pseudoclasse - Focus, igual o Hover*/
-.campo input:focus{
-    outline: 2px solid var(--laranja-famifica);
-
-}
-
-.campo-descricao :focus{
+.campo input:focus, .campo-descricao textarea:focus{
     outline: 2px solid var(--laranja-famifica);
 }
+
+
 
 #contato form button {
     height: 40px;
@@ -392,4 +389,50 @@ h2{
     background-color: #ad4929;
 
     transition: 200ms;
+}
+
+footer {
+    height: 290px;
+
+    background-color: var(--roxo-gamifica);
+}
+
+footer .container-grid{
+    /* Para alinhar ao centro, é necessario dizer que a altura está relacionada ao container pai os 290px linha 395 */
+    height: 100%;
+    display: flex;
+
+    /* Justify é na horizontal | Align é na vertical */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais {
+    height: 50%;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: white;
+    font-family: 'Anta';
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a{
+    color: white;
+    transition: color 300ms;
+}
+
+.icones-redes a:hover{
+    color: var(--laranja-famifica)
 }
