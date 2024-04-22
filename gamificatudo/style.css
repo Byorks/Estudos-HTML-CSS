@@ -20,8 +20,8 @@
     background-image: url(img/Banner/img-banner.png);
 
     /* Com o uso da propriedade Background conseguimos configurar imagens,cores e gradientes de forma unificada. */
-    //*background: right / 50% 100% no-repeat url(img/Banner/obj-retangle.png), center /cover url(img/Banner/img-banner.png); */
-    background-repeat: no-repeat;
+    /*background: right / 50% 100% no-repeat url(img/Banner/obj-retangle.png), center /cover url(img/Banner/img-banner.png); */
+    background-repeat:no-repeat;
 
     /* Redimensiona a imagem, mantendo o proporção da tela(aspect ratio)*/
     background-size: cover;
@@ -37,7 +37,7 @@
 
     background-image: url(img/Banner/obj-retangle.png);
     background-repeat: no-repeat;
-    background-size: ;
+    background-size: 100% 100%;
     position: absolute;
     top: 0px;
     right: 0px;
