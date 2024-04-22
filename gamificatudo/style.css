@@ -18,14 +18,11 @@
 .banner {
     height: 100vh;
     background-image: url(img/Banner/img-banner.png);
+
     /* Com o uso da propriedade Background conseguimos configurar imagens,cores e gradientes de forma unificada. */
-<<<<<<< HEAD
+    //*background: right / 50% 100% no-repeat url(img/Banner/obj-retangle.png), center /cover url(img/Banner/img-banner.png); */
     background-repeat: no-repeat;
-=======
-    background: right / 50% 100% no-repeat url(img/Banner/obj-retangle.png), center /cover url(img/Banner/img-banner.png);
-    /*background-repeat: no-repeat;
-    background-position: 35% 0;*/
->>>>>>> 85f0a5d75c4ff1e274354d362f1601bddce07265
+
     /* Redimensiona a imagem, mantendo o proporção da tela(aspect ratio)*/
     background-size: cover;
 
@@ -34,13 +31,13 @@
 }
 
 .retangle_bg {
-    /* Pega 100% da altura do container "pai"*/
-    height: 100vh;
+    /* Pega 100% da altura do container "pai" */
+    height: 100%;
     width: 50%;
 
     background-image: url(img/Banner/obj-retangle.png);
     background-repeat: no-repeat;
-
+    background-size: ;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -52,6 +49,9 @@ header {
     height: 70px;
     border-radius: 0px 0px 30px 30px;
     background-color: var(--menu-color);
+
+    position: sticky;
+    z-index: 2;
 }
 
 header .container-grid {
@@ -61,13 +61,9 @@ header .container-grid {
     align-items: center;
 }
 
-<<<<<<< HEAD
-
-=======
 header #darkmode {
     display: flex;
     gap: 10px;
     align-items: center;
 
 }
->>>>>>> 85f0a5d75c4ff1e274354d362f1601bddce07265
