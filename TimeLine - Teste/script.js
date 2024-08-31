@@ -17,9 +17,11 @@ document.addEventListener('scroll', function() {
 
 
 // Player de áudio
+
 let mysong = document.getElementById("mysong");
 let icon = document.getElementById("icon");
 
+// Play/pause
 icon.onclick = function() {
     if(mysong.paused){
         mysong.play();
@@ -29,4 +31,10 @@ icon.onclick = function() {
         mysong.pause();
         icon.src = "img/Player.png"
     }
+}
+
+// Volume
+let recent_volume = document.querySelector('#volume');
+const volume_change = () => {
+    mysong.volume = recent_volume.value / 100;
 }

@@ -77,11 +77,13 @@ body{
     transition: 600ms ease;
     position: relative;
     z-index: 2;
-    margin: 50px 0;
+    margin: 100px 0;
     padding: 1rem;
     border-radius: 1rem;
     align-items: center;
     min-height: 300px;
+
+    border: 1px solid red;
 }
 
 .section:nth-child(odd) {
@@ -103,6 +105,11 @@ body{
 
 .content {
     width: calc(50% - 2rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .show-me:nth-child(n) {
@@ -115,6 +122,12 @@ h1 {
     letter-spacing: 1;
 }
 
+.line-div {
+    height: 4px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--azul-medio);
+}
 
 .photo-polaroid {
     width: 354px;
@@ -130,7 +143,6 @@ h1 {
     height: 338px;
     margin-top: 19px;
 }
-
 
 .song-section {
     display: flex;
