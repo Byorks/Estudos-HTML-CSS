@@ -20,6 +20,9 @@
         <div class="song-section">
             <h2>Clique para tocar</h2>
             <img src="img/Player.png" alt="" id="icon">
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" onchange="change_duration()" id="duration_slider">
+            </div>
             <span>
                 <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
             </span>
