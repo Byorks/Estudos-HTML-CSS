@@ -21,10 +21,15 @@
             <h2>Clique para tocar</h2>
             <img src="img/Player.png" alt="" id="icon">
             <div class="duration">
-                <input type="range" min="0" max="100" value="0" onchange="change_duration()" id="duration_slider">
+                <span id="current_time">0:00</span>
+                <input type="range" min="0" max="100" value="0" class="slider" onchange="change_duration()" id="duration_slider">
+                <span id="total_duration">0:00</span>
             </div>
             <span>
-                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+                <i class="fa-solid fa-volume-off"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" min="0" max="100" value="90" class="slider" onchange="volume_change()" id="volume">
             </span>
 
             <audio id="mysong">
@@ -77,4 +82,6 @@
     </div>
     
 </body>
+
+<script src="https://kit.fontawesome.com/f14f2550c8.js" crossorigin="anonymous"></script>
 </html>

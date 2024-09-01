@@ -144,6 +144,47 @@ h1 {
     margin-top: 19px;
 }
 
+.duration {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 1rem;
+}
+
+#duration_slider {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    background-color: white;
+    outline: 1px solid var(--azul-medio);
+    border-radius: 20px;
+    cursor: pointer;
+    height: 7px;
+    overflow: hidden;
+}
+
+.slider::-webkit-slider-runnable-track {
+    height: 7px;
+    -webkit-appearance: none;
+    color: var(--azul-medio);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--azul-medio);
+    cursor: pointer;
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    cursor: ew-resize;
+    box-shadow: -80px 0 0 80px var(--azul-claro);
+}
+
 .song-section {
     display: flex;
     flex-direction: column;

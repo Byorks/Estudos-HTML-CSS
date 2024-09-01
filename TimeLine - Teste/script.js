@@ -15,11 +15,24 @@ document.addEventListener('scroll', function() {
     });
 });
 
+// Formatando o tempo em minutos e segundos
+const formatTime = (time) => {
+    let minutes = Math.floor(time / 60);
+    let seconds = Math.floor(time % 60);
+    if (seconds < 10) {
+        seconds = `0${seconds}`;
+    } 
+
+    return `${minutes}:${seconds}`;
+};
 
 // Player de áudio
 
 let mysong = document.getElementById('mysong');
 let icon = document.getElementById("icon");
+const currentTime = document.getElementById('current_time');
+const totalDuration = document.getElementById('total_duration');
+
 
 // Play/pause
 icon.onclick = function() {
@@ -41,6 +54,7 @@ const volume_change = () => {
 
 // Seletor de progresso da música
 let slider = document.querySelector('#duration_slider');
+
 const change_duration = () => {
     slider_position = mysong.duration * (slider.value/100);
     mysong.currentTime = slider_position;
@@ -51,9 +65,25 @@ const updateSlider = () => {
     let position = 0;
 
     if(!isNaN(mysong.duration)){
-        position = mysong.currentTime * (100/ mysong.duration);
+        position = mysong.currentTime * (100 / mysong.duration);
         slider.value = position;
+        
+        // Atualiza o tempo atual
+        currentTime.textContent = formatTime(mysong.currentTime);
+        // Atualiza a duração total
+        totalDuration.textContent = formatTime(mysong.duration);
     }
-}
+};
 
+// slider.addEventListener('input', () => {
+//     slider_position = (mysong.duration/ 100) * slider.value;
+//     mysong.currentTime = slider_position;
+// });
+
+// Atualiza o slider e o tempo automaticamente enquanto a música toca
 mysong.addEventListener('timeupdate', updateSlider);
+
+// Quando o audio carregar, definir a duração total
+mysong.addEventListener('loadedmetadata', () => {
+    totalDuration.textContent = formatTime(mysong.duration);
+});
