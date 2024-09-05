@@ -26,6 +26,29 @@ const formatTime = (time) => {
     return `${minutes}:${seconds}`;
 };
 
+// Speaker hahah fiz na mão :D
+const volHigh = document.getElementById('vol-high');
+const volLow = document.getElementById('vol-low');
+const volOff = document.getElementById('vol-off');
+
+const mostrarSpeaker = () => {
+    if(mysong.volume * 100 > 50) {
+        volHigh.style.display = 'block';
+        volLow.style.display = 'none';
+        volOff.style.display = 'none';
+    }
+    else if (mysong.volume  * 100 > 1) {
+        volLow.style.display = 'block';
+        volOff.style.display = 'none';
+        volHigh.style.display = 'none';
+    }
+    else{
+        volOff.style.display = 'block';
+        volLow.style.display = 'none';
+        volHigh.style.display = 'none';
+    }
+}
+
 // Player de áudio
 
 let mysong = document.getElementById('mysong');
