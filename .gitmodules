@@ -1,0 +1,3 @@
+[submodule "SENAI_Learn/gamificaai-ver2/gamificaai"]
+	path = SENAI_Learn/gamificaai-ver2/gamificaai
+	url = https://github.com/Byorks/gamificaai.git
