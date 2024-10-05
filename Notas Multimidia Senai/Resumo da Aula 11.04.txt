@@ -1,7 +1,0 @@
-Sobre as alterações e acréscimos que fizemos hoje:
-
-- Aprendemos a criar cards com botões;
-
-- Usar imagens como placeholder(imagens temporárias), apenas usando url do unsplash; https://www.jotform.com/blog/unsplash-it-use-placeholder-photos-from-unsplash-com-93599/
-
--
