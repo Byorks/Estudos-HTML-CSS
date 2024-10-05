@@ -1,6 +1,7 @@
 [submodule "SENAI_Learn/gamificaai-ver2/gamificaai"]
 	path = SENAI_Learn/gamificaai-ver2/gamificaai
 	url = https://github.com/Byorks/gamificaai.git
-[submodule "SENAI_Learngamificatudo"]
-	path = SENAI_Learngamificatudo
-	url = https://github.com/Byorks/GamificaTudo.git
+
+[submodule "SENAI_Learn/gamificatudo"]
+    path = SENAI_Learn/gamificatudo
+    url = https://github.com/Byorks/GamificaTudo.git
