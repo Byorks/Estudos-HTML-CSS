@@ -14,10 +14,14 @@ class StarRater extends HTMLElement {
         // Adicionando um filho que foi criado no 'style'
         shadow.appendChild(this.styles());
 
+        // Passando o conteúdo da função para uma variável
         const rater = this.createRater();
+
+        // Passando o conteúdo da função para uma variável
         // this sendo utilizado para compartilhar variável entre classes
         this.stars = this.createStars();
 
+        // Cada estrela está sendo inserida no webcomponent criado o rater
         this.stars.forEach(star => rater.appendChild(star));
 
         this.resetRating();
