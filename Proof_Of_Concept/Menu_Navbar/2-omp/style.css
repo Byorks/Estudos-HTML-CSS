@@ -1,0 +1,258 @@
+:root {
+    --laranja-claro-omp: #FBD4BA;
+    --roxo-claro-omp: #CECCE7;
+    --roxo-omp: #6460A7 ;
+    --laranja-omp: #D65F36 ;
+    --roxo-escuro-omp: #2A315B ;
+    --laranja-escuro-omp: #753E2B;
+    --bege-omp: #F4F3EE;
+    --cinza-omp: #515151;
+}
+
+h1, h2, h3{
+    font-family: 'Dosis';
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+
+.container-grid {
+    max-width: 1620px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.header {
+    height: 149px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--bege-omp);
+}
+
+#icon-logo {
+}
+
+#icon-logo-compact {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-closed {
+    display: none;
+}
+
+#icon-bars {
+    display: none;
+}
+
+.menu-button { 
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+    position: relative; 
+}
+
+/* .menu-button {
+    height: 3px;
+    width: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--roxo-omp);
+    cursor: pointer;
+    padding: 0;
+} */
+
+.line-nav {
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    height: 3.5px;
+    width: 28px;
+    border-radius: 15px;
+    margin: 0;
+    background-color: var(--roxo-omp);
+    transition: .3s;
+}
+
+.line-nav:after {
+    top: -8px;
+}
+
+.line-nav:before {
+    top: 8px;
+}
+
+.line-nav::after,
+.line-nav::before {
+    left: 0;
+    content: '';
+    height: 3.5px;
+    width: 28px;
+    border-radius: 10px;
+    background-color: var(--roxo-omp);
+    position: absolute;
+    transition: .3s;
+}
+
+.menu-button.active .line-nav::after {
+    top: 0;
+    transform: rotate(-45deg)  ;
+}
+
+.menu-button.active .line-nav{
+    background:rgba(0,0,0,0);
+}
+
+.menu-button.active .line-nav::before {
+    top:0;
+    transform: rotate(45deg) ;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-lista{
+    /* Preciso calcular em porcentagem*/
+    width: 539px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-omp {
+    color: var(--cinza-omp);
+    font-family: 'Dosis';
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.link-omp:hover {
+    color: black;
+}
+
+.header .container-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.header .login-icons a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+#icon-bars {
+    width: 36px;
+    height: 36px;
+}
+
+#icon-x {
+    width: 36px;
+    height: 48px;
+}
+
+
+@media screen and (max-width: 1350px){
+    .header {
+        height: 50px;
+    }
+
+    #icon-logo-compact {
+        display: inline;
+    }
+
+    #icon-logo {
+        display: none;
+    }
+
+    .menu-button {
+        display: inline;
+    }
+
+    .header .container-grid {
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+
+        width: 425px;
+        height: calc(100vh - 50px);
+
+        background-color: var(--bege-omp);
+
+        position: absolute;
+        z-index: 50;
+        top: 50px;
+        right: 0;
+
+        padding: 24px 16px;
+    }
+
+    .header-links {
+        width: 80%;
+        flex-direction: column;
+        gap: 62px;
+
+        border: solid 2px var(--laranja-omp);
+        border-radius: 35px;
+
+        padding: 48px 0;
+    }
+
+    .header-nav-lista {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .login-icons {
+       flex-direction: column;
+       align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+
+
+/* Para funcionar */
