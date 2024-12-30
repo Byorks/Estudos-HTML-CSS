@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <!-- Facilita  a leitura de um código-fonte por conta da sua fonte monoespaçada onde o espaço lateral é o mesmo para todoas as letras. -->
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!-- Tag pre auxilia na preservação dos espaçoes e da identação. -->
+    <pre>
+        <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é par.')
+    else:
+        print(f'O número {num} é ímpar.')
+    print('Fim do programa.')
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <!-- Estamos demonstrando que é uma sitação ao HTML, ele adiciona automaticamente as aspas. -->
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTMl para Leigos:</p>
+    <!-- Blockquote aparece deslocada para a direita  e com uma margem adicional. -->
+     <!-- Alem disso podemos adicionar o link onde os mescanismo de busca vão entender a citação. -->
+    <blockquote cite="">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <!-- Ao passar o mouse sobre as abreviações, você verá o significado delas. -->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto Invertido</h2>
+    <!-- Inverte o texto rsrs -->
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>
