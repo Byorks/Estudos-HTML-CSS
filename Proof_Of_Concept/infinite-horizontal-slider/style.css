@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+}
+
+:root {
+    --duration: 2s;
+    --totalitems: 12;
+}
+
+body { 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    height: 8vw;
+    width: 80vw;
+    overflow: hidden;
+    border: red 1px solid;
+}
+
+.img-item {
+    position: absolute;
+    height: inherit;
+    width: 8vw;
+    left: 100%;
+    animation: scrollX var(--duration) linear infinite;
+    animation-delay: calc(var(--duration) / var(--totalitems) * (var(--totalitems) - var(--i)));
+
+    & img {
+        height: inherit;
+    }
+}
+
+@keyframes scrollX {
+    to {
+        left: -8vw;
+    }
+}
