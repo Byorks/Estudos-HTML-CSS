@@ -2,11 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0 solid;
 }
 
 :root {
-    --duration: 2s;
+    --duration: 10s;
     --totalitems: 12;
 }
 
@@ -43,5 +42,69 @@ body {
 @keyframes scrollX {
     to {
         left: -8vw;
+    }
+}
+
+
+.logos-wrapper {
+  overflow: hidden;
+}
+
+.logos-track {
+  display: flex;
+  gap: 6rem;                    /* ← espaçamento que você quiser */
+  animation: scroll-seamless 10s linear infinite;
+}
+
+/* Tamanho das logos – aumente o quanto quiser! */
+.logos-track img {
+  height: 100px;                /* ← 80px, 120px, 150px… sem medo! */
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* O segredo do loop perfeito */
+@keyframes scroll-seamless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pausa no hover (opcional, mas fica lindo) */
+.logos-wrapper:hover .logos-track {
+  animation-play-state: paused;
+}
+
+
+
+
+/* Tentativa 3 */
+.logos {
+    background-color: aliceblue;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 60px 0;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+
+.logo-slide img {
+    height: 50px;
+    margin:  0 40px;
+}
+
+@keyframes slide {
+    form {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }
